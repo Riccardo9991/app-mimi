@@ -1,0 +1,120 @@
+/* Impostazioni generali */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fffbf1;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Titolo del gioco */
+.game-title {
+  font-size: 3rem;
+  color: #ff5733;
+  margin: 20px;
+  text-shadow: 2px 2px #000;
+  text-align: center;
+}
+
+/* Sezione dei topic */
+.topic-selection {
+  background-color: #ffffff;
+  border: 3px solid #ffcc33;
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.topic-selection h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Elenco dei topic */
+.topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.topic {
+  background-color: #f2f2f2;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.topic:hover {
+  background-color: #eaeaea;
+  transform: scale(1.05);
+}
+
+.topic[data-difficulty="facile"] {
+  color: #28a745;
+}
+
+.topic[data-difficulty="medio"] {
+  color: #ffc107;
+}
+
+.topic[data-difficulty="difficile"] {
+  color: #dc3545;
+}
+
+/* Tema selezionato */
+.topic.selected {
+  background-color: #dcdcdc;
+  border-color: #333;
+  font-weight: bold;
+}
+
+/* Bottone della ruota */
+.roulette-container {
+  margin: 20px;
+}
+
+.roulette-button {
+  background-color: #ffcc33;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.roulette-button:hover {
+  transform: rotate(15deg) scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Bottone di navigazione */
+footer {
+  margin-top: 20px;
+}
+
+.next-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.next-button:hover {
+  transform: scale(1.2);
+}
